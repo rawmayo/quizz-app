@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --blue: #3e88f3;
+  --green: #01c24e;
+  --white: #fff;
+  --lavender: #5275ed;
+  --light-red: #e37681;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+  height: 100vh;
+}
+
+.container {
+  max-width: 768px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-card {
+  width: 500px;
+}
+
+.number-of-questions {
+  font-weight: 300;
+}
+
+.question {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-answer {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0.95rem 0;
+  color: var(--lavender);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-answer:hover {
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+.form-control {
+  width: 100%;
+  border: none;
+  padding: 0.55rem 0.65rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 0.55rem 0;
+  cursor: pointer;
+  color: var(--lavender);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.error {
+  background-color: var(--light-red);
+  padding: 0.55rem 0.75rem;
+  border-radius: 5px;
+}
+
+.error-message {
+  font-size: 0.85rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  display: inline-block;
+  margin: 0.55rem 0;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.secondary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.result-tally {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.correct,
+.incorrect {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+}
+
+.score h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.correct {
+  background-color: var(--green);
+}
+
+.incorrect {
+  background-color: var(--light-red);
+}
+
+.admin-link {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-decoration: none;
+  color: var(--white);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Quizz App</title>
+  </head>
+  <body>
+    <div class="container d-flex">
+      <div class="admin-container">
+        <h1>Create your own quizz</h1>
+        <div class="error hidden">
+          <span class="error-message"></span>
+        </div>
+        <form id="create-form" action="#">
+          <div class="question">
+            <div class="form-group">
+              <label for="question" class="form-label">Question</label>
+              <input
+                id="question"
+                class="form-control"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="choices">
+            <div class="form-group">
+              <label for="question" class="form-label">Choice A</label>
+              <input
+                id="choice-a"
+                class="form-control"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="question" class="form-label">Choice B</label>
+              <input
+                id="choice-b"
+                class="form-control"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="question" class="form-label">Choice C</label>
+              <input
+                id="choice-c"
+                class="form-control"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="correct-answer">
+            <div class="form-group">
+              <label for="question" class="form-label">Answer</label>
+              <select name="correct-answer" id="correct" class="form-control">
+                <option value="null">Select the correct choice</option>
+                <option value="A">Choice A</option>
+                <option value="B">Choice B</option>
+                <option value="C">Choice C</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit" id="btn-create">Add Quizz</button>
+          </div>
+        </form>
+        <div class="form-group secondary-actions">
+          <a class="link" href="index.html">Start Quizz</a>
+          <button id="clear" class="link">Clear Quizz</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/admin.js"></script>
+  </body>
+</html>
